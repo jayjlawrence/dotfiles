@@ -17,6 +17,7 @@
 [core]
         excludesfile = ~/.gitignore
         editor = vim
+	autocrlf = input
 [apply]
         whitespace = nowarn
 [mergetool]
@@ -33,3 +34,19 @@
         default = simple
 [credential]
 	helper = osxkeychain
+
+[merge]
+    #tool = meld
+    tool = diffuse
+	conflictstyle = diff3
+    log = true
+	branchdesc = true
+	renameLimit = 2500
+
+[diff]
+   tool = diffuse
+   #suppressBlankEmpty = true
+   #mnemonicPrefix = true
+   noprefix = true
+   renameLimit = 2500
+
